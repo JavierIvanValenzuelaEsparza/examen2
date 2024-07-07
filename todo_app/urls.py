@@ -1,5 +1,3 @@
-# todo_app/urls.py
-
 from django.urls import path
 from . import views
 
@@ -12,6 +10,4 @@ urlpatterns = [
     path('todos/ids-and-user/', views.ToDoListIDsAndUserView.as_view(), name='todo-list-ids-user'),
     path('todos/resolved/ids-and-user/', views.ToDoListResolvedIDsAndUserView.as_view(), name='todo-list-resolved-ids-user'),
     path('todos/unresolved/ids-and-user/', views.ToDoListUnresolvedIDsAndUserView.as_view(), name='todo-list-unresolved-ids-user'),
-    # Añade otras URLs según sea necesario para tus vistas adicionales
 ]
-

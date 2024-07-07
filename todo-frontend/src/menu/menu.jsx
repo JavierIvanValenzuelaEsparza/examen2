@@ -12,6 +12,7 @@ const Menu = () => {
       <Link to="/todoswithuserid" className={styles.navbarLink}>Todos con Usuario</Link>
       <Link to="/resolvedwithuserid" className={styles.navbarLink}>Resueltos con Usuario</Link>
       <Link to="/pendingwithuserid" className={styles.navbarLink}>Pendientes con Usuario</Link>
+      <Link to="/create" className={styles.navbarLink}>Crear Pendiente</Link>
     </div>
   );
 }

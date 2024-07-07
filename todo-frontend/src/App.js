@@ -10,12 +10,13 @@ import TodoListResolved from './components/TodoListResolved';
 import TodoListWithUser from './components/TodoListWithUser';
 import TodoListResolvedWithUser from './components/TodoListResolvedWithUser';
 import TodoListUnresolvedWithUser from './components/TodoListUnresolvedWithUser';
+import TodoForm from './components/TodoForm';
 
 const App = () => {
   return (
     <Router>
       <div>
-        <Menu /> {/* Aquí se incluye el menú de navegación */}
+        <Menu />
         <Routes>
           <Route path="/" element={<TodoList />} />
           <Route path="/IDandTitles" element={<TodoListIDsAndTitles />} />
@@ -24,6 +25,8 @@ const App = () => {
           <Route path="/todoswithuserid" element={<TodoListWithUser />} />
           <Route path="/resolvedwithuserid" element={<TodoListResolvedWithUser />} />
           <Route path="/pendingwithuserid" element={<TodoListUnresolvedWithUser />} />
+          <Route path="/pendingwithuserid" element={<TodoListUnresolvedWithUser />} />
+          <Route path="/create" element={<TodoForm />} />
         </Routes>
       </div>
     </Router>

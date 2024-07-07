@@ -9,7 +9,7 @@ const TodoListResolvedWithUser = () => {
     useEffect(() => {
         const fetchResolvedTodosWithUser = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/todos/resolved-with-user/');
+                const response = await axios.get('http://127.0.0.1:8000/api/todos/resolved/ids-and-user/');
                 setResolvedTodosWithUser(response.data);
             } catch (error) {
                 console.error('Error fetching resolved todos with user:', error);

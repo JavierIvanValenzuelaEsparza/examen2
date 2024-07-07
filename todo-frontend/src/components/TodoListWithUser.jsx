@@ -9,7 +9,7 @@ const TodoListWithUser = () => {
     useEffect(() => {
         const fetchTodosWithUser = async () => {
             try {
-                const response = await axios.get('http://127.0.0.1:8000/api/todos/with-user/');
+                const response = await axios.get('http://127.0.0.1:8000/api/todos/ids-and-user/');
                 setTodosWithUser(response.data);
             } catch (error) {
                 console.error('Error fetching todos with user:', error);

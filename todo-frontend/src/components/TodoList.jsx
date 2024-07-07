@@ -28,7 +28,14 @@ const TodoList = () => {
         <h2>Lista de Todos los Pendientes</h2>
         <ul>
           {todos.map(todo => (
-            <li key={todo.id}>{todo.id}</li>
+            <li key={todo.id}>
+              <p><strong>ID:</strong> {todo.id}</p>
+              <p><strong>Título:</strong> {todo.title}</p>
+              <p><strong>Descripción:</strong> {todo.description}</p>
+              <p><strong>Estado:</strong> {todo.status}</p>
+              <p><strong>Usuario:</strong> {todo.user}</p>
+              <p><strong>Creado en:</strong> {new Date(todo.created_at).toLocaleString()}</p>
+            </li>
           ))}
         </ul>
       </div>
