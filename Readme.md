@@ -1,7 +1,3 @@
-# Nombre del Proyecto
-
-Descripción corta del proyecto.
-
 ## Requisitos
 
 - Python (versión X.X)
