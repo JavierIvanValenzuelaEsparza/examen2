@@ -64,9 +64,9 @@ const TodoForm = () => {
 
         <label htmlFor="user" style={styles.label}>Usuario:</label>
         <select id="user" name="user" value={formData.user} onChange={handleChange} required style={styles.select}>
-          <option value="">Seleccione un usuario...</option>
+          <option value="">Seleccione un Superusuario...</option>
           {users.map(user => (
-            <option key={user.id} value={user.id}>{user.username}</option>
+            <option key={user.id} value={user.id}>{user.id}</option>
           ))}
         </select>
 
